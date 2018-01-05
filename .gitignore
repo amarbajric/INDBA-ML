@@ -1,5 +1,11 @@
+# All folders that are created by Jupyter Notebooks. Not needed on the repo.
 .ipynb_checkpoints
 .local
 .cache
 .coverage
-jupyter-notebooks/**
+.jupyter
+.ipython
+.config
+
+# Data from NLTK Library... Do not push
+nltk_data/
