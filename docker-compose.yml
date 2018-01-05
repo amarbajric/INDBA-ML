@@ -1,0 +1,26 @@
+version: '2'
+services:
+    jupyter:
+        image: jupyter/scipy-notebook
+        container_name: "twitter-jupyterNB"
+        environment:
+            - NODE_ENV=development
+        volumes:
+            - ./jupyter-notebooks:/home/jovyan/work
+        ports:
+            - 8888:8888
+        links:
+            - twitter-mongodb
+        depends_on:
+            - twitter-mongodb
+        command: start-notebook.sh --NotebookApp.token=''
+    twitter-mongodb:
+        image: mongo:latest
+        container_name: "twitter-mongodb"
+        environment:
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+          - MONGODB_USER="indba" 
+          - MONGODB_PASS="indba"
+        ports:
+            - 27017:27017
