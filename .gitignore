@@ -2,4 +2,4 @@ jupyter-notebooks/.ipynb_checkpoints
 jupyter-notebooks/.local
 jupyter-notebooks/.cache
 jupyter-notebooks/.coverage
-jupyter-notebooks/files
+jupyter-notebooks/**
