@@ -1,5 +1,5 @@
-jupyter-notebooks/.ipynb_checkpoints
-jupyter-notebooks/.local
-jupyter-notebooks/.cache
-jupyter-notebooks/.coverage
+.ipynb_checkpoints
+.local
+.cache
+.coverage
 jupyter-notebooks/**
