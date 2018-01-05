@@ -6,7 +6,7 @@ services:
         environment:
             - NODE_ENV=development
         volumes:
-            - ./jupyter-notebooks:/home/jovyan/work
+            - ./jupyter-notebooks:/home/jovyan
         ports:
             - 8888:8888
         links:
