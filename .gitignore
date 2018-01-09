@@ -9,3 +9,8 @@
 
 # Data from NLTK Library... Do not push
 nltk_data/
+
+# External unnecessary folders
+.conda
+.plotly
+.texmf-var
