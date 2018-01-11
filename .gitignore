@@ -1,3 +1,6 @@
+# general files to exclude
+.DS_Store
+
 # All folders that are created by Jupyter Notebooks. Not needed on the repo.
 .ipynb_checkpoints
 .local
